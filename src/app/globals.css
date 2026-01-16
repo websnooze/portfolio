@@ -1,0 +1,209 @@
+@config "../../tailwind.config.js";
+@import "tailwindcss";
+
+@layer base {
+	html {
+		scroll-behavior: smooth;
+	}
+	body {
+		@apply font-normal bg-background;
+	}
+}
+@layer utilities {
+	.container {
+		@apply lg:max-w-7xl lg:mx-auto sm:w-full sm:px-4;
+	}
+	#section {
+		@apply lg:py-24 sm:py-12;
+	}
+	.waveanimation {
+		@apply origin-[70%_70%] animate-wave inline-block;
+	}
+}
+
+@layer utilities {
+	.chatbot-scroll-area:after {
+		background: linear-gradient(
+			to bottom,
+			transparent,
+			hsl(var(--spown-background))
+		);
+		height: 50px;
+		bottom: 85px;
+	}
+	.chatbot-scroll-area:after,
+	.chatbot-scroll-area:before {
+		content: "";
+		pointer-events: none;
+		z-index: 5;
+		width: 100%;
+		position: fixed;
+		left: 0;
+	}
+
+	/* Styles pour le chat */
+	.chat-container {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		min-height: 0;
+	}
+
+	.chat-body {
+		flex: 1;
+		min-height: 0;
+		overflow-y: auto;
+		overflow-x: hidden;
+	}
+
+	.chat-footer {
+		flex-shrink: 0;
+		position: sticky;
+		bottom: 0;
+		background: inherit;
+		z-index: 10;
+	}
+
+	/* Amélioration du scroll pour le chat */
+	.chat-body::-webkit-scrollbar {
+		width: 6px;
+	}
+
+	.chat-body::-webkit-scrollbar-track {
+		background: transparent;
+	}
+
+	.chat-body::-webkit-scrollbar-thumb {
+		background: hsl(var(--spown-content1) / 0.3);
+		border-radius: 3px;
+	}
+
+	.chat-body::-webkit-scrollbar-thumb:hover {
+		background: hsl(var(--spown-content1) / 0.5);
+	}
+
+	/* Révélation gauche→droite via masque utilisant var(--reveal) */
+	.mask-reveal {
+		-webkit-mask-image: linear-gradient(
+			90deg,
+			#000 0%,
+			#000 var(--reveal),
+			transparent calc(var(--reveal) + 0.1%)
+		);
+		mask-image: linear-gradient(
+			90deg,
+			#000 0%,
+			#000 var(--reveal),
+			transparent calc(var(--reveal) + 0.1%)
+		);
+	}
+
+	/* Panneau de balayage flou synchronisé avec --reveal */
+	.sweep-blur {
+		left: calc(var(--reveal) - (var(--sweep-width, 1000px) / 2));
+		width: var(--sweep-width, 1000px);
+		background: linear-gradient(
+			90deg,
+			hsl(var(--spown-background) / 0) 0%,
+			hsl(var(--spown-background) / 0.4) 50%,
+			hsl(var(--spown-background) / 0.4) 100%
+		);
+		backdrop-filter: blur(var(--sweep-blur, 30px));
+		-webkit-backdrop-filter: blur(var(--sweep-blur, 30px));
+	}
+}
+
+@supports (view-transition-name: none) {
+	html {
+		view-transition-name: root;
+	}
+	::view-transition-group(root) {
+		animation-duration: 0s;
+	}
+	::view-transition-old(root),
+	::view-transition-new(root) {
+		animation: none;
+	}
+	::view-transition-old(root) {
+		z-index: 1;
+	}
+	::view-transition-new(root) {
+		z-index: 2;
+	}
+}
+
+.btn__outline {
+	outline: 0.5px solid hsl(var(--spown-button));
+	color: hsl(var(--spown-button));
+	background: 0 0;
+}
+
+.btn {
+	cursor: pointer;
+	border: 0;
+	border-radius: 24px;
+	width: fit-content;
+	padding: 12px 32px;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 1.25rem;
+	transition: transform 0.4s linear;
+	position: relative;
+	overflow: hidden;
+}
+
+.btn:hover {
+	transition: transform 0.6s cubic-bezier(0.34, 5.56, 0.64, 1);
+	transform: scaleX(1.02);
+}
+.btn:hover .btn__ripple,
+.btn:hover:after {
+	border-radius: 0;
+	top: 0;
+}
+
+.btn__ripple {
+	background: hsl(var(--spown-button));
+	border-radius: 100% 100% 0 0;
+	transition:
+		top 0.5s cubic-bezier(0.4, 0, 0, 1),
+		border-radius 0.5s cubic-bezier(0.4, 0, 0, 1);
+	top: 101%;
+}
+
+.btn__ripple,
+.btn__text:after {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+}
+
+.btn__text {
+	transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+	display: block;
+	transform: translateY(0);
+}
+.btn:hover .btn__text {
+	transform: translateY(-110%);
+}
+
+.btn__outline .btn__text:after {
+	color: hsl(var(--spown-button-foreground));
+}
+
+.btn__ripple,
+.btn__text:after {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+}
+
+.btn__text:after {
+	content: attr(data-attr);
+	color: hsl(var(--spown-button));
+	text-align: center;
+	top: 110%;
+	right: 0;
+}
