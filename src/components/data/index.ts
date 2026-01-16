@@ -85,7 +85,7 @@ export const socialsData = [
 		label: "Linkedin",
 		icon: Linkedin,
 		target: "_blank",
-		link: "https://www.linkedin.com/company/mathiaslac",
+		link: "https://linkedin.com/in/mathias-lac-4629992b2",
 	},
 	{
 		id: 2,

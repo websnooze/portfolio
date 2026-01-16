@@ -13,7 +13,7 @@ const AboutHero = () => {
 					<Image
 						src="/images/hero.png"
 						className="aspect-3/4 h-full w-full object-cover transition duration-300 hover:scale-[1.015]"
-						alt="Novata"
+						alt="Websnooze"
 						priority
 						width={400}
 						height={600}

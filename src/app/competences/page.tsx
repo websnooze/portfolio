@@ -7,32 +7,32 @@ import {
 } from "./components";
 
 export const metadata: Metadata = {
-	metadataBase: new URL("https://novata.fr"),
-	title: "Services | Novata",
+	metadataBase: new URL("https://websnooze.xyz"),
+	title: "Compétences | Websnooze",
 	description:
-		"Création de sites web modernes, applications mobiles React Native, UI/UX design et optimisations. Solutions sur mesure pour votre présence digitale.",
+		"Développeur React / Typescript, Websnooze crée des sites modernes et durables, applications web et expériences digitales sur mesure.",
 	openGraph: {
-		title: "Services | Novata",
+		title: "Compétences | Websnooze",
 		description:
-			"Création de sites web modernes, applications mobiles React Native, UI/UX design et optimisations. Solutions sur mesure pour votre présence digitale.",
-		url: "https://novata.fr/services",
-		siteName: "Services | Novata",
+			"Développeur React / Typescript, Websnooze crée des sites modernes et durables, applications web et expériences digitales sur mesure.",
+		url: "https://websnooze.xyz/competences",
+		siteName: "Compétences | Websnooze",
 		images: [{ url: "/og.jpg", width: 1200, height: 630 }],
 		locale: "fr_FR",
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Services | Novata",
+		title: "Compétences | Websnooze",
 		description:
-			"Création de sites web modernes, applications mobiles React Native, UI/UX design et optimisations. Solutions sur mesure pour votre présence digitale.",
+			"Développeur React / Typescript, Websnooze crée des sites modernes et durables, applications web et expériences digitales sur mesure.",
 		images: ["/twitter.jpg"],
 	},
 	icons: {
 		icon: "/favicon.ico",
 	},
 	alternates: {
-		canonical: "https://novata.fr/services",
+		canonical: "https://websnooze.xyz/competences",
 	},
 };
 

@@ -6,8 +6,8 @@ import { createElement } from "react";
 
 const resend = new Resend("re_59G8xLGY_Lid64nR5mY9mGdzoj2o6Riw3");
 
-const senderEmail = "noreply@notifications.novata.fr";
-const receiverEmail = "contact@novata.fr";
+const senderEmail = "noreply@notifications.websnooze.xyz";
+const receiverEmail = "devsnooze@gmail.com";
 
 export async function POST(request: NextRequest) {
 	const body = await request.json();
@@ -19,7 +19,7 @@ export async function POST(request: NextRequest) {
 
 	try {
 		const { data, error } = await resend.emails.send({
-			from: "Novata <" + senderEmail + ">",
+			from: "Websnooze <" + senderEmail + ">",
 			to: [receiverEmail],
 			subject: "Nouveau message de " + name,
 			react: createElement(SenderTemplate, { name, email, message, reason }),
@@ -27,7 +27,7 @@ export async function POST(request: NextRequest) {
 
 		const { data: receiverData, error: receiverError } =
 			await resend.emails.send({
-				from: "Novata <" + senderEmail + ">",
+				from: "Websnooze <" + senderEmail + ">",
 				to: [email],
 				subject: name + ", votre message a été envoyé",
 				react: createElement(ReceiverTemplate, { name, reason }),
@@ -35,17 +35,24 @@ export async function POST(request: NextRequest) {
 
 		if (error || receiverError) {
 			console.error("Resend error:", { error, receiverError });
-			return Response.json({ 
-				error: error?.message || error || "Erreur lors de l'envoi de l'email",
-				receiverError: receiverError?.message || receiverError 
-			}, { status: 500 });
+			return Response.json(
+				{
+					error: error?.message || error || "Erreur lors de l'envoi de l'email",
+					receiverError: receiverError?.message || receiverError,
+				},
+				{ status: 500 }
+			);
 		}
 
 		return Response.json({ data, receiverData });
 	} catch (error) {
 		console.error("API Route error:", error);
-		return Response.json({ 
-			error: error instanceof Error ? error.message : "Erreur serveur inconnue" 
-		}, { status: 500 });
+		return Response.json(
+			{
+				error:
+					error instanceof Error ? error.message : "Erreur serveur inconnue",
+			},
+			{ status: 500 }
+		);
 	}
 }

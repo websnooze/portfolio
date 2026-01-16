@@ -50,7 +50,7 @@ export function ReceiverTemplate({ name, reason }: ReceiverTemplateProps) {
 					<Container className="bg-slate-200 border border-slate-400 rounded-xl">
 						<Row align="center" className="p-4 h-20 mb-4">
 							<Text className="text-2xl font-bold text-center">
-								Nova<strong className="text-lime-500">t</strong>a.fr
+								Websnooze<strong className="text-lime-500">.xyz</strong>
 							</Text>
 						</Row>
 						<Row align="center" className="p-4 my-4 ">
@@ -59,12 +59,12 @@ export function ReceiverTemplate({ name, reason }: ReceiverTemplateProps) {
 							</Text>
 							<Text className="text-black text-center">
 								Merci pour votre message{reason ? ` concernant: ${reason}` : ""}
-								! Nous vous répondrons dans les plus brefs délais.
+								! Je vous répondrai dans les plus brefs délais.
 							</Text>
 							<Text className="text-black text-center mt-4">
-								Si vous souhaitez nous contacter directement, vous pouvez nous
+								Si vous souhaitez me contacter directement, vous pouvez me
 								envoyer un email à &nbsp;
-								<strong className="text-lime-500">contact@novata.fr</strong>
+								<strong className="text-lime-500">devsnooze@gmail.com</strong>
 							</Text>
 						</Row>
 						<Row align="center" className="bg-slate-300 p-4 h-20">

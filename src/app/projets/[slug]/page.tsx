@@ -27,24 +27,24 @@ export async function generateMetadata({
 
 	if (!projectData) {
 		return {
-			title: "Réalisation non trouvée | Novata",
+			title: "Réalisation non trouvée | Websnooze",
 			description: "La réalisation que vous recherchez n'existe pas.",
 		};
 	}
 
 	const project: ProjetItemData = projectData;
-	const title = `${project.title} | Novata`;
+	const title = `${project.title} | Websnooze`;
 	const description = project.description;
 
 	return {
-		metadataBase: new URL("https://novata.fr"),
+		metadataBase: new URL("https://websnooze.xyz"),
 		title: title,
 		description: description,
 		openGraph: {
 			title: title,
 			description: description,
-			url: `https://novata.fr/realisations/${slug}`,
-			siteName: "Novata — Agence web à Cahors",
+			url: `https://websnooze.xyz/realisations/${slug}`,
+			siteName: "Websnooze — Développeur React / Typescript",
 			images: [{ url: project.header.url, width: 1200, height: 630 }],
 			locale: "fr_FR",
 			type: "website",
@@ -59,7 +59,7 @@ export async function generateMetadata({
 			icon: "/favicon.ico",
 		},
 		alternates: {
-			canonical: `https://novata.fr/realisations/${slug}`,
+			canonical: `https://websnooze.xyz/realisations/${slug}`,
 		},
 	};
 }

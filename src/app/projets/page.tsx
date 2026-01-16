@@ -5,32 +5,32 @@ import { SectionTitle } from "@/components/modules";
 import { getAllProjets } from "./data";
 
 export const metadata: Metadata = {
-	metadataBase: new URL("https://novata.fr"),
-	title: "Réalisations | Novata",
+	metadataBase: new URL("https://websnooze.xyz"),
+	title: "Réalisations | Websnooze",
 	description:
-		"Découvrez nos réalisations web et applications : développement React, Node.js, UI design et solutions digitales innovantes alliant performance et créativité.",
+		"Découvrez mes réalisations web et applications : développement React, Typescript, Node.js, UI design et solutions digitales innovantes alliant performance et créativité.",
 	openGraph: {
-		title: "Réalisations | Novata",
+		title: "Réalisations | Websnooze",
 		description:
-			"Découvrez nos réalisations web et applications : développement React, Node.js, UI design et solutions digitales innovantes alliant performance et créativité.",
-		url: "https://novata.fr/realisations",
-		siteName: "Réalisations | Novata",
+			"Découvrez mes réalisations web et applications : développement React, Typescript, Node.js, UI design et solutions digitales innovantes alliant performance et créativité.",
+		url: "https://websnooze.xyz/realisations",
+		siteName: "Réalisations | Websnooze",
 		images: [{ url: "/og.jpg", width: 1200, height: 630 }],
 		locale: "fr_FR",
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Réalisations | Novata",
+		title: "Réalisations | Websnooze",
 		description:
-			"Découvrez nos réalisations web et applications : développement React, Node.js, UI design et solutions digitales innovantes alliant performance et créativité.",
+			"Découvrez mes réalisations web et applications : développement React, Typescript, Node.js, UI design et solutions digitales innovantes alliant performance et créativité.",
 		images: ["/twitter.jpg"],
 	},
 	icons: {
 		icon: "/favicon.ico",
 	},
 	alternates: {
-		canonical: "https://novata.fr/realisations",
+		canonical: "https://websnooze.xyz/realisations",
 	},
 };
 

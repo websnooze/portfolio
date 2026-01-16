@@ -5,32 +5,32 @@ import { PageItem } from "./components";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-	metadataBase: new URL("https://novata.fr"),
-	title: "Politique de confidentiatlite | Novata",
+	metadataBase: new URL("https://websnooze.xyz"),
+	title: "Politique de confidentiatlite | Websnooze",
 	description:
-		"Découvrez notre politique de confidentialité et de protection des données.",
+		"Découvrez ma politique de confidentialité et de protection des données.",
 	openGraph: {
-		title: "Politique de confidentiatlite | Novata",
+		title: "Politique de confidentiatlite | Websnooze",
 		description:
-			"Découvrez notre politique de confidentialité et de protection des données.",
-		url: "https://novata.fr/politique-de-confidentiatlite",
-		siteName: "Réalisations | Novata",
+			"Découvrez ma politique de confidentialité et de protection des données.",
+		url: "https://websnooze.xyz/politique-de-confidentiatlite",
+		siteName: "Politique de confidentiatlite | Websnooze",
 		images: [{ url: "/og.jpg", width: 1200, height: 630 }],
 		locale: "fr_FR",
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Politique de confidentiatlite | Novata",
+		title: "Politique de confidentiatlite | Websnooze",
 		description:
-			"Découvrez notre politique de confidentialité et de protection des données.",
+			"Découvrez ma politique de confidentialité et de protection des données.",
 		images: ["/twitter.jpg"],
 	},
 	icons: {
 		icon: "/favicon.ico",
 	},
 	alternates: {
-		canonical: "https://novata.fr/politique-de-confidentiatlite",
+		canonical: "https://websnooze.xyz/politique-de-confidentiatlite",
 	},
 };
 

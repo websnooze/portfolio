@@ -10,7 +10,6 @@ import {
 	Footer,
 	ScrollShadow,
 	MobileNav,
-	ChatBot,
 	MobileNavbar,
 } from "@/components/layouts/main";
 import { Providers } from "./providers";
@@ -61,7 +60,6 @@ export default function RootLayout({
 					{children}
 					<MobileNav />
 					<Footer />
-					<ChatBot />
 					<ScrollShadow position="bottom" />
 				</Providers>
 			</body>
