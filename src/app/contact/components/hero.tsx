@@ -137,7 +137,7 @@ const ContactHero = () => {
 				>
 					<div className="max-w-xl">
 						<SectionTitle
-							title="Nous contacter"
+							title="Me contacter"
 							subtitle="Lançons un projet ensemble"
 						/>
 					</div>
@@ -327,10 +327,10 @@ const ContactHero = () => {
 								src="/images/avatar.png"
 							/>
 							<p className="mt-6 mb-6 text-default">
-								Notre boîte de réception est toujours ouverte, que vous ayez un
-								projet ou que vous souhaitiez simplement me dire bonjour. Nous
-								serons ravis d&apos;avoir de vos nouvelles. N&apos;hésitez pas à
-								nous contacter, nous vous répondrons dans les plus brefs délais.
+								Ma boîte de réception est toujours ouverte, que vous ayez un
+								projet ou que vous souhaitiez simplement me dire bonjour. Je
+								serai ravis d&apos;avoir de vos nouvelles. N&apos;hésitez pas à
+								me contacter, je vous répondrai dans les plus brefs délais.
 							</p>
 							<div className="flex items-center opacity-container text-default gap-6">
 								{socialsData.map((item) => (

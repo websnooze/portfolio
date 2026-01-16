@@ -15,16 +15,16 @@ const HomeAbout = () => {
 			</div>
 			<LetterReveal
 				className="flex flex-wrap text-center lg:leading-11 justify-center font-sans text-content1-foreground font-medium tracking-wide lg:text-[2rem] sm:text-2xl"
-				text="Novata est une agence web indépendante animée par l’envie de donner vie à des idées ambitieuses. Chaque projet est pour nous l’occasion de créer une expérience digitale unique, à la fois esthétique, fluide et centrée sur l’utilisateur. Grâce à des collaborations variées, allant de jeunes marques à des projets confidentiels, nous avons affûté notre savoir-faire pour transformer une vision en produit concret, performant et durable."
+				text="Je suis un développeur React / Typescript animé par l’envie de donner vie à des idées ambitieuses. Chaque projet est pour moi l’occasion de créer une expérience digitale unique, à la fois esthétique, fluide et centrée sur l’utilisateur. Grâce à des collaborations variées, allant de jeunes marques à des projets confidentiels, j’ai affûté mon savoir-faire pour transformer une vision en produit concret, performant et durable."
 			/>
 			<p className="sr-only">
-				Novata est une agence web indépendante animée par l&apos;envie de donner
-				vie à des idées ambitieuses. Chaque projet est pour nous l&apos;occasion
-				de créer une expérience digitale unique, à la fois esthétique, fluide et
-				centrée sur l&apos;utilisateur. Grâce à des collaborations variées,
-				allant de jeunes marques à des projets confidentiels, nous avons affûté
-				notre savoir-faire pour transformer une vision en produit concret,
-				performant et durable.
+				Je suis un développeur React / Typescript animée par l&apos;envie de
+				donner vie à des idées ambitieuses. Chaque projet est pour moi
+				l&apos;occasion de créer une expérience digitale unique, à la fois
+				esthétique, fluide et centrée sur l&apos;utilisateur. Grâce à des
+				collaborations variées, allant de jeunes marques à des projets
+				confidentiels, j&apos;ai affûté mon savoir-faire pour transformer une
+				vision en produit concret, performant et durable.
 			</p>
 		</section>
 	);

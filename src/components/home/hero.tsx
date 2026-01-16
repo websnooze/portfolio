@@ -12,7 +12,7 @@ const HomeHero = () => {
 				<span className="waveanimation">
 					<Hand className="w-6 h-6 text-primary" />
 				</span>
-				Bonjour! Nous sommes Novata
+				Bonjour! Je suis Websnooze
 			</p>
 			<h1 className="font-display text-[3rem] font-medium leading-none text-pretty md:text-6xl lg:w-3/4 lg:text-7xl">
 				Concevoir des{" "}
@@ -22,7 +22,7 @@ const HomeHero = () => {
 			<div className="flex sm:flex-col items-center mt-8 gap-4">
 				<div className="bg-content1 h-px w-full" />
 				<p className="w-full text-pretty text-default">
-					Nous concevons des expériences numériques soignées, attrayantes et
+					Je conçois des expériences numériques soignées, attrayantes et
 					accessibles, qui produisent des résultats concrets et contribuent à
 					atteindre les objectifs commerciaux.
 				</p>
@@ -43,7 +43,7 @@ const HomeHero = () => {
 					))}
 				</ul>
 				<Link href="/services" className="sm:w-full sm:flex sm:items-start">
-					<ButtonMotion label="Mieux nous connaître" />
+					<ButtonMotion label="Mieux me connaître" />
 				</Link>
 			</div>
 		</section>

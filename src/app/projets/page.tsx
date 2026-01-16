@@ -42,13 +42,13 @@ const Projects = async () => {
 			<div className="w-2/3">
 				<div className="hidden sm:block">
 					<SectionTitle
-						title="Nos réalisations"
+						title="Mes projets"
 						subtitle="Produits digitaux innovants"
 					/>
 				</div>
 				<div className="sm:hidden">
 					<SectionTitle
-						title="Nos réalisations"
+						title="Mes projets"
 						subtitle="Créer des produits numériques de nouvelle génération"
 					/>
 				</div>

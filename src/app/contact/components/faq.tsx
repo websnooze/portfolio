@@ -17,12 +17,12 @@ const ContactFaq = () => {
 			>
 				<AccordionItem
 					key="1"
-					aria-label="Quels types de projets réalisez-vous ?"
+					aria-label="Quels types de projets réalisez-tu ?"
 					title={
 						<div className="flex items-center sm:items-start gap-2.5 font-semibold">
 							<span className="text-default">01.</span>
 							<span className="sm:max-w-[220px]">
-								Quels types de projets réalisez-vous ?
+								Quels types de projets réalisez-tu ?
 							</span>
 						</div>
 					}
@@ -33,11 +33,9 @@ const ContactFaq = () => {
 						indicator: "-rotate-90 data-[open=true]:-rotate-270 sm:mt-2",
 					}}
 				>
-					Nous concevons et développons des{" "}
-					<strong>
-						sites web vitrines, e-commerce et applications mobiles.
-					</strong>{" "}
-					Nous prenons également en charge le <strong>design UI/UX</strong>, la{" "}
+					Je conçois et développe des{" "}
+					<strong>sites web vitrines, e-commerce et applications web.</strong>{" "}
+					Je prends également en charge le <strong>design UI/UX</strong>, la{" "}
 					<strong>maintenance</strong> et l’
 					<strong>optimisation de performances</strong>.
 				</AccordionItem>

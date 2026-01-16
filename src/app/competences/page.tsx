@@ -2,7 +2,6 @@ import { Metadata } from "next";
 import {
 	AboutHero,
 	AboutPilars,
-	AboutPrices,
 	AboutSteps,
 	AboutTechMarquee,
 } from "./components";
@@ -43,7 +42,6 @@ const Services = () => {
 			<AboutHero />
 			<AboutTechMarquee />
 			<AboutPilars />
-			<AboutPrices />
 			<AboutSteps />
 		</main>
 	);

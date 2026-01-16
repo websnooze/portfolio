@@ -28,7 +28,7 @@ const AboutHero = () => {
 									spinDuration={10}
 									onHover="slowDown"
 									className="uppercase text-sm tracking-widest"
-									text="Contactez nous • Contactez nous • "
+									text="Contactez moi • Contactez moi • "
 								/>
 							</div>
 						</div>
@@ -37,16 +37,16 @@ const AboutHero = () => {
 			</div>
 			<div className="w-full flex flex-col gap-6 items-start">
 				<h1 className="text-balance text-7xl sm:text-5xl font-display max-w-4xl font-medium">
-					<span className="text-primary">Agence web créative</span>, concepteur
-					numérique
+					<span className="text-primary">Développeur React / Typescript</span>,
+					concepteur numérique
 				</h1>
 				<p className="text-balance text-default">
-					Nous concevons des expériences numériques soignées, attrayantes et
+					Je conçois des expériences numériques soignées, attrayantes et
 					accessibles, qui produisent des résultats concrets et contribuent à
 					atteindre les objectifs commerciaux.
 				</p>
 				<Link href="/contact">
-					<ButtonMotion label="Contactez-nous" />
+					<ButtonMotion label="Contactez-moi" />
 				</Link>
 			</div>
 		</section>

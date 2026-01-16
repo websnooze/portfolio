@@ -27,14 +27,14 @@ export const navigationData = [
 	{
 		id: 2,
 		icon: BriefcaseBusiness,
-		label: "Services",
-		link: "/services",
+		label: "Compétences",
+		link: "/competences",
 	},
 	{
 		id: 3,
 		icon: PencilRuler,
-		label: "Réalisations",
-		link: "/realisations",
+		label: "Projets",
+		link: "/projets",
 	},
 	{
 		id: 4,
@@ -79,21 +79,20 @@ export const reasonsData = [
 	},
 ];
 
-
 export const socialsData = [
 	{
 		id: 1,
 		label: "Linkedin",
 		icon: Linkedin,
 		target: "_blank",
-		link: "https://www.linkedin.com/company/agencenovata",
+		link: "https://www.linkedin.com/company/mathiaslac",
 	},
 	{
 		id: 2,
 		label: "Github",
 		icon: Github,
 		target: "_blank",
-		link: "https://github.com/Agence-Novata",
+		link: "https://github.com/websnooze",
 	},
 	{
 		id: 4,
@@ -321,25 +320,29 @@ export const pilarsData = [
 		id: 1,
 		icon: Globe,
 		title: "Création de sites web",
-		description: "Des sites modernes, rapides et évolutifs, pensés pour refléter votre image et atteindre vos objectifs en ligne.",
+		description:
+			"Des sites modernes, rapides et évolutifs, pensés pour refléter votre image et atteindre vos objectifs en ligne.",
 	},
 	{
 		id: 2,
 		icon: TabletSmartphone,
-		title: "Applications mobiles",
-		description: "Des applications performantes et intuitives, conçues avec React Native pour offrir une expérience fluide sur iOS et Android.",
+		title: "Applications Web",
+		description:
+			"Des applications performantes et intuitives, conçues avec React et/ou Next et Typescript pour offrir une expérience fluide.",
 	},
 	{
 		id: 3,
 		icon: PencilRuler,
 		title: "UI/UX Design",
-		description: "Des interfaces élégantes et cohérentes, centrées sur l’humain, pour une navigation claire et mémorable sur tous les supports.",
+		description:
+			"Des interfaces élégantes et cohérentes, centrées sur l’humain, pour une navigation claire et mémorable sur tous les supports.",
 	},
 	{
 		id: 4,
 		icon: Settings,
 		title: "Optimisations",
-		description: "Un suivi continu pour garantir performance, sécurité et évolutivité, afin de faire durer vos projets dans le temps.",
+		description:
+			"Un suivi continu pour garantir performance, sécurité et évolutivité, afin de faire durer vos projets dans le temps.",
 	},
 ];
 
@@ -351,15 +354,16 @@ export const pricesData = [
 		titleColor: "text-primary",
 		background: "bg-content2 border-1 border-primary",
 		price: 700,
-		devis:false,
+		devis: false,
 		duration: "2 à 3 semaines",
-		description :"Idéal pour présenter votre activité, vos services et vos contacts.",
+		description:
+			"Idéal pour présenter votre activité, vos services et vos contacts.",
 		features: [
 			"Design sur mesure",
 			"1 à 5 pages optimisées",
 			"Formulaire de contact",
 			"Maintenance technique offerte 1 mois",
-		]
+		],
 	},
 	{
 		id: 2,
@@ -368,15 +372,16 @@ export const pricesData = [
 		titleColor: "text-foreground",
 		background: "bg-content2/60 border-1 border-content1",
 		price: 1500,
-		devis:false,
+		devis: false,
 		duration: "3 à 5 semaines",
-		description :"Pour vendre vos produits en ligne facilement, avec un solution clé en main.",
+		description:
+			"Pour vendre vos produits en ligne facilement, avec un solution clé en main.",
 		features: [
 			"Catalogue produits",
 			"Gestion des commandes",
 			"Paiement sécurisé (Stripe / Mollie)",
 			"Backoffice complet",
-		]
+		],
 	},
 	{
 		id: 3,
@@ -385,17 +390,18 @@ export const pricesData = [
 		titleColor: "text-foreground",
 		background: "bg-content2/40 border-1 border-content1",
 		price: 2000,
-		devis:true,
+		devis: true,
 		duration: "Selon la complexité",
-		description :"Application sur mesure : tableau de bord, interface client, ou app mobile React Native.",
+		description:
+			"Application sur mesure : tableau de bord, interface client, ou app mobile React Native.",
 		features: [
 			"Conception UX/UI",
 			"Développement complet (frontend + backend)",
 			"Intégration d’API / base de données",
 			"Suivi technique",
-		]
+		],
 	},
-]
+];
 
 export const communityData = {
 	title: "Travail communautaire",
@@ -476,7 +482,7 @@ export const mentionsLegalesData = {
 		{
 			id: 1,
 			label: "Nom",
-			value: "Novata",
+			value: "Websnooze",
 		},
 		{
 			id: 2,
@@ -496,7 +502,7 @@ export const mentionsLegalesData = {
 		{
 			id: 5,
 			label: "Email",
-			value: "contact@novata.fr",
+			value: "devsnooze@gmail.com",
 		},
 	],
 	respPub: "Mathias Lac",
@@ -509,7 +515,7 @@ export const mentionsLegalesData = {
 		},
 	},
 	propIntel:
-		"L'ensemble des contenus (textes, images, graphismes, logo, code) présentés sur ce  site, sont la propriété exclusive de Novata sauf mention contraire. Toute reproduction, même partielle, est interdite sans accord préalable.",
+		"L'ensemble des contenus (textes, images, graphismes, logo, code) présentés sur ce  site, sont la propriété exclusive de Websnooze sauf mention contraire. Toute reproduction, même partielle, est interdite sans accord préalable.",
 };
 
 export const policyData = [
@@ -517,7 +523,7 @@ export const policyData = [
 		id: 1,
 		label: "Formulaire de contact",
 		content:
-			"Les informations saisies dans le formulaire de contact (nom, prénom, adresse email, message) sont transmises uniquement par email à <strong className='font-semibold'>contact@novata.fr</strong>. Elles ne sont pas stockées dans une base de données et ne font l’objet d’aucune autre utilisation que le traitement de votre demande.",
+			"Les informations saisies dans le formulaire de contact (nom, prénom, adresse email, message) sont transmises uniquement par email à <strong className='font-semibold'>devsnooze@gmail.com</strong>. Elles ne sont pas stockées dans une base de données et ne font l’objet d’aucune autre utilisation que le traitement de votre demande.",
 		list: null,
 	},
 	{

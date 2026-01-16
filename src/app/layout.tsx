@@ -17,9 +17,9 @@ import { Providers } from "./providers";
 import { navigationLd, pageLd } from "@/seo";
 import Script from "next/script";
 export const metadata: Metadata = {
-	metadataBase: new URL("https://novata.fr"),
-	title: "Novata",
-	description: "Novata",
+	metadataBase: new URL("https://websnooze.xyz"),
+	title: "Websnooze",
+	description: "Développeur React / Typescript",
 };
 
 export default function RootLayout({
@@ -30,7 +30,7 @@ export default function RootLayout({
 	return (
 		<html lang="fr" translate="no">
 			<head>
-				<meta name="apple-mobile-web-app-title" content="Novata" />
+				<meta name="apple-mobile-web-app-title" content="Websnooze" />
 				<meta name="mobile-web-app-capable" content="yes" />
 				<script type="application/ld+json">
 					{JSON.stringify(navigationLd)}

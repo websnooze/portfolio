@@ -52,9 +52,9 @@ const Policy = () => {
 				))}
 			</div>
 			<p className="text-default">
-				Pour toute demande, vous pouvez nous contacter à :{" "}
-				<Link href="mailto:contact@novata.fr" className="text-primary">
-					contact@novata.fr
+				Pour toute demande, vous pouvez me contacter à :{" "}
+				<Link href="mailto:devsnooze@gmail.com" className="text-primary">
+					devsnooze@gmail.com
 				</Link>
 			</p>
 		</section>

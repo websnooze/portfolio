@@ -10,9 +10,9 @@ const OPTIONS: EmblaOptionsType = { align: "start" };
 const AboutSteps = () => {
 	return (
 		<section id="section" className="container flex flex-col">
-			<SectionTitle title="Nos étapes" subtitle="Notre processus de conception">
+			<SectionTitle title="Mes étapes" subtitle="Mon processus de conception">
 				<p className="text-default text-balance">
-					Pour nous, il n&apos;existe pas de petit projet : chacun mérite
+					Pour moi, il n&apos;existe pas de petit projet : chacun mérite
 					d&apos;être réalisé comme un produit haut de gamme.
 				</p>
 			</SectionTitle>

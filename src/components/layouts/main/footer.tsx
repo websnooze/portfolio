@@ -27,7 +27,7 @@ const Footer = () => {
 						Créons votre prochaine grande idée.
 					</h2>
 					<Link href="/contact">
-						<ButtonMotion label="Contactez-nous" />
+						<ButtonMotion label="Contactez-moi" />
 					</Link>
 					<div className="lg:hidden mt-6 flex items-center opacity-container text-default gap-6">
 						{socialsData.map((item) => (
