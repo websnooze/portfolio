@@ -12,10 +12,31 @@ import { Metadata } from "next";
 import { getProjetBySlug } from "./data";
 import { ProjetItemData } from "./types";
 import ReactMarkdown from "react-markdown";
+import { getAllProjets } from "../data";
 
 dayjs.locale("fr");
 
 const OPTIONS: EmblaOptionsType = { align: "center" };
+
+export const dynamicParams = true;
+
+export async function generateStaticParams() {
+	try {
+		const projets = await getAllProjets();
+
+		if (!projets || projets.length === 0) {
+			console.warn("Aucun projet trouvé lors de la génération statique");
+			return [];
+		}
+
+		return projets.map((projet) => ({
+			slug: projet.slug,
+		}));
+	} catch (error) {
+		console.error("Erreur lors de la génération des paramètres statiques:", error);
+		return [];
+	}
+}
 
 export async function generateMetadata({
 	params,
