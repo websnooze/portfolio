@@ -11,7 +11,7 @@ const SentSuccess = () => {
 			exit={{ opacity: 0, scale: 0.95 }}
 			transition={{ duration: 0.2, ease: "easeInOut" }}
 			id="section"
-			className="container flex flex-col gap-4 items-center justify-center my-[13.5rem]"
+			className="container flex flex-col gap-4 items-center justify-center my-54"
 		>
 			<div className="flex items-center sm:flex-col sm:justify-center gap-4 sm:-mt-10">
 				<ShieldCheck className="w-12 h-12 text-primary" />
@@ -21,8 +21,8 @@ const SentSuccess = () => {
 			</div>
 			<div className="flex flex-col gap-4 text-center">
 				<p className="max-w-md text-default">
-					Votre message a bien été envoyé. Nous vous répondrons dans les plus
-					brefs délais.
+					Votre message a bien été envoyé. Je vous répondrai dans les plus brefs
+					délais.
 				</p>
 			</div>
 		</motion.section>

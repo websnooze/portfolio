@@ -25,7 +25,7 @@ const Navbar = () => {
 	const rawWidthPercent = useTransform(
 		scrollY,
 		[0, SHRINK_DISTANCE_PX],
-		[FULL_WIDTH_PERCENT, MIN_WIDTH_PERCENT]
+		[FULL_WIDTH_PERCENT, MIN_WIDTH_PERCENT],
 	);
 	const widthPercent = useSpring(rawWidthPercent, {
 		stiffness: 260,
@@ -37,7 +37,7 @@ const Navbar = () => {
 	const borderOpacity = useTransform(
 		widthPercent,
 		[FULL_WIDTH_PERCENT, MIN_WIDTH_PERCENT],
-		[0, 1]
+		[0, 1],
 	);
 	const borderColor = useTransform(borderOpacity, (o: number) => {
 		return `rgba(var(--nav-border-rgb), ${o})`;
@@ -46,7 +46,7 @@ const Navbar = () => {
 	const rawBackgroundOpacity = useTransform(
 		scrollY,
 		[0, SHRINK_DISTANCE_PX],
-		[0, 1]
+		[0, 1],
 	);
 	const backgroundOpacity = useSpring(rawBackgroundOpacity, {
 		stiffness: 260,
@@ -87,7 +87,7 @@ const Navbar = () => {
 											className={clsx(
 												"flex items-center gap-2",
 												isActive ? "text-content1-foreground" : "text-default",
-												"transition-all duration-300"
+												"transition-all duration-300",
 											)}
 										>
 											{isActive ? (
@@ -99,10 +99,10 @@ const Navbar = () => {
 												<div className="h-1.5 w-1.5 rounded-full bg-transparent" />
 											)}
 											<div className="relative inline-flex overflow-hidden font-medium">
-												<span className="translate-y-0 skew-y-0 transform-gpu transition-transform duration-500 group-hover:-translate-y-[110%] group-hover:skew-y-11">
+												<span className="translate-y-0 skew-y-0 transform-gpu transition-transform duration-500 group-hover:-translate-y-[110%] group-hover:skew-y-9">
 													{item.label}
 												</span>
-												<span className="text-text-primary absolute translate-y-[110%] skew-y-11 transform-gpu transition-transform duration-500 group-hover:translate-y-0 group-hover:skew-y-0">
+												<span className="text-text-primary absolute translate-y-[110%] skew-y-9 transform-gpu transition-transform duration-500 group-hover:translate-y-0 group-hover:skew-y-0">
 													{item.label}
 												</span>
 											</div>

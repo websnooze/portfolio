@@ -106,7 +106,7 @@ const ContactFaq = () => {
 						indicator: "-rotate-90 data-[open=true]:-rotate-270 sm:mt-2",
 					}}
 				>
-					Oui, nous assurons un <strong>suivi continu</strong> : maintenance,
+					Oui, j&apos;assure un <strong>suivi continu</strong> : maintenance,
 					mises à jour, hébergement, sécurité et évolutions futures de votre
 					projet.
 				</AccordionItem>
@@ -128,8 +128,8 @@ const ContactFaq = () => {
 						indicator: "-rotate-90 data-[open=true]:-rotate-270 sm:mt-2",
 					}}
 				>
-					Non — bien que basés à <strong>Cahors</strong>, nous collaborons avec
-					des <strong>clients dans toute la France</strong> et à l’étranger, à
+					Non — bien que basé à <strong>Cahors</strong>, je collabore avec des{" "}
+					<strong>clients dans toute la France</strong> et à l’étranger, à
 					distance ou sur place selon les besoins.
 				</AccordionItem>
 			</Accordion>
