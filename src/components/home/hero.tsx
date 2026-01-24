@@ -42,7 +42,7 @@ const HomeHero = () => {
 						</li>
 					))}
 				</ul>
-				<Link href="/services" className="sm:w-full sm:flex sm:items-start">
+				<Link href="/competences" className="sm:w-full sm:flex sm:items-start">
 					<ButtonMotion label="Mieux me connaître" />
 				</Link>
 			</div>
